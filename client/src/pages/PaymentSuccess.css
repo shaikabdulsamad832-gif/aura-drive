@@ -1,0 +1,809 @@
+.auraSuccessPage {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 145px 22px 70px;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(212, 175, 55, 0.2),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(255, 239, 165, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #020202,
+      #0a0a0a 55%,
+      #050505
+    );
+  color: #ffffff;
+}
+
+.successGlow {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(100px);
+}
+
+.successGlowOne {
+  width: 360px;
+  height: 360px;
+  top: -160px;
+  left: -150px;
+  background: rgba(212, 175, 55, 0.2);
+}
+
+.successGlowTwo {
+  width: 400px;
+  height: 400px;
+  right: -190px;
+  bottom: -220px;
+  background: rgba(255, 238, 150, 0.1);
+}
+
+.successReceiptCard {
+  width: min(760px, 100%);
+  position: relative;
+  z-index: 2;
+  padding: 38px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.3);
+  border-radius: 36px;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212, 175, 55, 0.1),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(25, 25, 25, 0.98),
+      rgba(4, 4, 4, 0.99)
+    );
+  box-shadow:
+    0 50px 150px rgba(0, 0, 0, 0.8),
+    0 0 80px
+      rgba(212, 175, 55, 0.06),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.06);
+}
+
+.successBrand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.successBrand img {
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+}
+
+.successBrand span {
+  color: #d4af37;
+  font-size: 9px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.successBrand h2 {
+  margin-top: 3px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.successCheckWrap {
+  display: grid;
+  place-items: center;
+  margin: 22px 0 18px;
+}
+
+.successCheck {
+  width: 94px;
+  height: 94px;
+  display: grid;
+  place-items: center;
+  border: 1px solid
+    rgba(101, 226, 160, 0.3);
+  border-radius: 50%;
+  background:
+    rgba(101, 226, 160, 0.08);
+  box-shadow:
+    0 0 0 12px
+      rgba(101, 226, 160, 0.03),
+    0 25px 60px
+      rgba(64, 205, 130, 0.15);
+}
+
+.successCheck span {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      135deg,
+      #55d493,
+      #b4f4d2
+    );
+  color: #03160b;
+  font-size: 34px;
+  font-weight: 1000;
+}
+
+.successHeading {
+  text-align: center;
+}
+
+.successHeading > span {
+  color: #65dfa2;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.successHeading h1 {
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: clamp(27px, 5vw, 39px);
+  letter-spacing: -1.3px;
+}
+
+.successHeading p {
+  max-width: 550px;
+  margin: 11px auto 0;
+  color: #949494;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.successAmount {
+  margin: 26px 0;
+  padding: 22px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.22);
+  border-radius: 22px;
+  background:
+    rgba(212, 175, 55, 0.055);
+  text-align: center;
+}
+
+.successAmount span {
+  display: block;
+  color: #999999;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.successAmount strong {
+  display: block;
+  margin-top: 5px;
+  color: #d4af37;
+  font-size: 42px;
+}
+
+.successAmount small {
+  display: block;
+  margin-top: 5px;
+  color: #707070;
+  font-size: 9px;
+}
+
+.successStatusRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin-bottom: 18px;
+}
+
+.successStatusRow div {
+  padding: 15px;
+  border-radius: 17px;
+  background:
+    rgba(255, 255, 255, 0.035);
+}
+
+.successStatusRow span {
+  display: block;
+  color: #777777;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.successStatusRow strong {
+  display: block;
+  margin-top: 5px;
+  color: #eeeeee;
+  font-size: 12px;
+}
+
+.successStatusRow .paidText {
+  color: #65dfa2;
+}
+
+.successRouteCard {
+  padding: 19px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.14);
+  border-radius: 20px;
+  background:
+    rgba(255, 255, 255, 0.03);
+}
+
+.successRoutePoint {
+  display: grid;
+  grid-template-columns:
+    16px minmax(0, 1fr);
+  gap: 11px;
+}
+
+.successPickupDot,
+.successDropDot {
+  width: 13px;
+  height: 13px;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+.successPickupDot {
+  background: #d4af37;
+  box-shadow:
+    0 0 14px
+      rgba(212, 175, 55, 0.6);
+}
+
+.successDropDot {
+  border: 2px solid #ffffff;
+}
+
+.successRoutePoint small {
+  color: #d4af37;
+  font-size: 8px;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+.successRoutePoint p {
+  margin-top: 4px;
+  color: #d3d3d3;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.successRouteLine {
+  width: 2px;
+  height: 29px;
+  margin: 5px 0 5px 5px;
+  background:
+    linear-gradient(
+      #d4af37,
+      #ffffff
+    );
+  opacity: 0.5;
+}
+
+.successReceiptGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin-top: 18px;
+}
+
+.successReceiptGrid div {
+  min-width: 0;
+  padding: 14px;
+  border-radius: 16px;
+  background:
+    rgba(255, 255, 255, 0.035);
+}
+
+.successReceiptGrid span {
+  display: block;
+  color: #777777;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.successReceiptGrid strong {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  color: #dddddd;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.successDriverCard {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 13px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 15px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.13);
+  border-radius: 18px;
+  background:
+    rgba(212, 175, 55, 0.04);
+}
+
+.successDriverAvatar {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #fff1a8
+    );
+  color: #050505;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.successDriverCard span {
+  color: #888888;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.successDriverCard h3 {
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.successDriverCard p {
+  margin-top: 3px;
+  color: #999999;
+  font-size: 10px;
+}
+
+.successActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin-top: 24px;
+}
+
+.successActions button {
+  min-height: 52px;
+  padding: 14px 18px;
+  border-radius: 17px;
+  font-size: 12px;
+  font-weight: 1000;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.successActions button:hover {
+  transform: translateY(-3px);
+}
+
+.successPrimaryButton {
+  border: none;
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #fff1a8
+    );
+  color: #050505;
+  box-shadow:
+    0 18px 45px
+      rgba(212, 175, 55, 0.2);
+}
+
+.successSecondaryButton {
+  border: 1px solid
+    rgba(212, 175, 55, 0.28);
+  background:
+    rgba(212, 175, 55, 0.07);
+  color: #d4af37;
+}
+
+.successEmptyCard {
+  width: min(520px, 100%);
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.28);
+  border-radius: 30px;
+  background:
+    rgba(10, 10, 10, 0.96);
+  text-align: center;
+}
+
+.successEmptyLogo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.successEmptyCard h1 {
+  margin-top: 17px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.successEmptyCard p {
+  margin-top: 10px;
+  color: #929292;
+  line-height: 1.6;
+}
+
+.successEmptyCard button {
+  width: 100%;
+  margin-top: 21px;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #fff1a8
+    );
+  color: #050505;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .auraSuccessPage {
+    padding: 155px 14px 45px;
+  }
+
+  .successReceiptCard {
+    padding: 25px 18px;
+    border-radius: 28px;
+  }
+
+  .successStatusRow,
+  .successReceiptGrid,
+  .successActions {
+    grid-template-columns: 1fr;
+  }
+
+  .successHeading h1 {
+    font-size: 29px;
+  }
+
+  .successAmount strong {
+    font-size: 35px;
+  }
+}
+.auraSuccessPage {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 145px 22px 70px;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(212, 175, 55, 0.2),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(255, 239, 165, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #020202,
+      #0a0a0a 55%,
+      #050505
+    );
+  color: #ffffff;
+}
+
+.successGlow {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(100px);
+}
+
+.successGlowOne {
+  width: 360px;
+  height: 360px;
+  top: -160px;
+  left: -150px;
+  background:
+    rgba(212, 175, 55, 0.2);
+}
+
+.successGlowTwo {
+  width: 400px;
+  height: 400px;
+  right: -190px;
+  bottom: -220px;
+  background:
+    rgba(255, 238, 150, 0.1);
+}
+
+.successReceiptCard {
+  width: min(680px, 100%);
+  position: relative;
+  z-index: 2;
+  padding: 38px;
+  border: 1px solid
+    rgba(212, 175, 55, 0.3);
+  border-radius: 36px;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212, 175, 55, 0.1),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(25, 25, 25, 0.98),
+      rgba(4, 4, 4, 0.99)
+    );
+  box-shadow:
+    0 50px 150px
+      rgba(0, 0, 0, 0.8),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.06);
+}
+
+.successBrand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.successBrand img {
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+}
+
+.successBrand span {
+  color: #d4af37;
+  font-size: 9px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.successBrand h2 {
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+.successCheckWrap {
+  display: grid;
+  place-items: center;
+  margin: 22px 0 18px;
+}
+
+.successCheck {
+  width: 94px;
+  height: 94px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    rgba(101, 226, 160, 0.08);
+}
+
+.successCheck span {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      135deg,
+      #55d493,
+      #b4f4d2
+    );
+  color: #03160b;
+  font-size: 34px;
+  font-weight: 1000;
+}
+
+.successHeading {
+  text-align: center;
+}
+
+.successHeading > span {
+  color: #65dfa2;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.successHeading h1 {
+  margin-top: 8px;
+  font-size:
+    clamp(27px, 5vw, 39px);
+}
+
+.successHeading p {
+  margin-top: 10px;
+  color: #949494;
+  line-height: 1.6;
+}
+
+.successAmount {
+  margin: 25px 0;
+  padding: 21px;
+  border-radius: 21px;
+  background:
+    rgba(212, 175, 55, 0.055);
+  text-align: center;
+}
+
+.successAmount span,
+.successReceiptGrid span,
+.successStatusRow span {
+  display: block;
+  color: #888888;
+  font-size: 8px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.successAmount strong {
+  display: block;
+  margin-top: 5px;
+  color: #d4af37;
+  font-size: 40px;
+}
+
+.successAmount small {
+  display: block;
+  margin-top: 5px;
+  color: #777777;
+}
+
+.successStatusRow,
+.successReceiptGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+}
+
+.successStatusRow div,
+.successReceiptGrid div {
+  min-width: 0;
+  padding: 14px;
+  border-radius: 15px;
+  background:
+    rgba(255, 255, 255, 0.035);
+}
+
+.successStatusRow strong,
+.successReceiptGrid strong {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  color: #eeeeee;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.successStatusRow .paidText {
+  color: #65dfa2;
+}
+
+.successReceiptGrid {
+  margin-top: 11px;
+}
+
+.successRedirectBox {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 15px;
+  background:
+    rgba(212, 175, 55, 0.07);
+  color: #c7c7c7;
+  text-align: center;
+}
+
+.successRedirectBox strong {
+  color: #d4af37;
+}
+
+.successHomeButton {
+  width: 100%;
+  margin-top: 16px;
+  min-height: 52px;
+  border: none;
+  border-radius: 17px;
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #fff1a8
+    );
+  color: #050505;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.successEmptyCard {
+  width: min(500px, 100%);
+  padding: 40px;
+  border-radius: 30px;
+  background: #0b0b0b;
+  text-align: center;
+}
+
+.successEmptyLogo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.successEmptyCard h1 {
+  margin-top: 17px;
+}
+
+.successEmptyCard p {
+  margin-top: 10px;
+  color: #929292;
+}
+
+.successEmptyCard button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #fff1a8
+    );
+  color: #050505;
+  font-weight: 1000;
+}
+
+@media (max-width: 600px) {
+  .auraSuccessPage {
+    padding: 155px 14px 45px;
+  }
+
+  .successReceiptCard {
+    padding: 24px 18px;
+  }
+
+  .successStatusRow,
+  .successReceiptGrid {
+    grid-template-columns: 1fr;
+  }
+}
